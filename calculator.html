@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- 
+        Name:          Amila Bahor
+        Course:        CS412 Web Application Development
+        Assigment:     CV
+        Due date: 13.01.2020.
+     -->
+
+    <title>Calculator</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="cv.css">
+    <script src="myScript.js" type="application/javascript"></script>
+</head>
+
+<body>
+        <a href="index.html" class="button1 btn btn-primary" role="button">GO BACK</a>
+    <table style="background-color: salmon; position: absolute; top: 50%; left: 50%; transform: translateX(-100%) translateY(-50%);">
+        <tr>
+            <td colspan="4">
+                <form action="" name="formcalc">
+                    <input type="textcalc" name="textcalc" id="textcalc" disabled>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button1 btn btn-primary" onclick="clean()" value="AC"></td>
+            <td><input type="button" class="button1 btn btn-primary" value="+/-"></td>
+            <td><input type="button" class="button1 btn btn-primary" onclick="insertNumber('%')" value="%"></td>
+            <td><input type="button" class="button1 btn btn-primary" onclick="insertNumber('/')" value="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(7)" value="7"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(8)" value="8"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(9)" value="9"></td>
+            <td><input type="button" class="button1 btn btn-primary" onclick="insertNumber('*')" value="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(4)" value="4"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(5)" value="5"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(6)" value="6"></td>
+            <td><input type="button" class="button1 btn btn-primary" onclick="insertNumber('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(1)" value="1"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(2)" value="2"></td>
+            <td><input type="button" class="button2 btn btn-primary" onclick="insertNumber(3)" value="3"></td>
+            <td><input type="button" class="button1 btn btn-primary" onclick="insertNumber('+')" value="+"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="button" class="button2 btn btn-primary btn-lg" style="width: 250px;" onclick="insertNumber(0)" value="0"></td>
+
+            <td><input type="button" class="button1 btn btn-primary" onclick="equal()" value="="></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
